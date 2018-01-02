@@ -52,6 +52,8 @@
       padding-bottom: 10px;
     }
   }
+  .top-menu__container { max-width: 320px; }
+
 }
 .word_menu{display: none;}
 .call {
@@ -168,6 +170,7 @@
     font-family: $pdf-light;
   }
 }
+.bx-slider__custom-pager {display: none;}
 .main-content--2 {
   background-image: url('/img/bgg2_mob.jpg');
   background-size: 100% 100%;

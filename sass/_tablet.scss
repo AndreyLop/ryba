@@ -43,10 +43,12 @@
 }
 @media screen and (min-width: 1025px) and (max-width: 1199px){
   .wrap_header{ width: 100%; max-width: 1000px;}
+  .top-menu__container {max-width: 1000px;}
   .my_menu .my_menu_wrap {width: 100%;}
   .call{width: auto;}
   .call-phone{margin-right: 20px;}
   .foot-wrap{width: 100%;max-width: 1000px;}
+  .bx-slider__custom-pager {bottom: 5vh;}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
 .tablet {
@@ -65,6 +67,9 @@
   .wrap_header {
     width: 688px;
   }
+}
+.top-menu__container {
+  max-width: 688px;
 }
 .top-menu {
   padding-top: 32px;
