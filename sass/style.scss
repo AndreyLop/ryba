@@ -93,6 +93,24 @@ body{
     padding-bottom: 30px;
   }
 }
+
+.bx-slider__custom-pager {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10vh;
+  .custom-pager__circle {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0px 5px;
+    &.active {
+      background-color: #0035aa;
+    }
+  }
+}
 .top-menu {
   padding-top: 36px;
   .burger-menu {
@@ -340,6 +358,7 @@ html {
   -webkit-align-items: flex-end;
 }
 .header-bottom.main {
+  position: relative;
   height: 70%;
 }
 .logo img {
