@@ -90,7 +90,6 @@ body{
     width: 1200px;
     margin: 0 auto;
     height: 100%;
-    padding-bottom: 30px;
   }
 }
 
@@ -98,7 +97,7 @@ body{
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 10vh;
+  bottom: 0vh;
   .custom-pager__circle {
     display: inline-block;
     width: 16px;
@@ -117,7 +116,7 @@ body{
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, .5);
-  z-index: 100;
+  z-index: 10000;
   .burger-menu {
     width: 78px;
     height: 78px;
@@ -626,21 +625,23 @@ footer span,
   text-transform: uppercase;
 }
 
-                                                // style for aqua
-
-
-
-.vp1 {
-background: url('../img/vp-1.jpg');
-background-size: cover;
+// style for aqua
+.vp_section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 580px;
 }
-.vp2 {
-background: url('../img/vp-2.jpg');
-background-size: cover;
+
+.vp1_section {
+  background-image: url('../img/vp-1.jpg');
 }
-.vp3 {
-background: url('../img/vp-3.jpg');
-background-size: cover;
+.vp2_section {
+  background-image: url('../img/vp-2.jpg');
+}
+.vp3_section {
+  background-image: url('../img/vp-3.jpg');
 }
 
 .main-text.vp {
@@ -742,18 +743,22 @@ footer {
   }
 }
 
-                                          // style for walk
-  .pp1 {
-    background: url('../img/pp-1.jpg');
+  // style for walk
+  .pp_section {
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 580px;
   }
-  .pp2 {
-  background: url('../img/pp-2.jpg');
-  background-size: cover;
+  .pp1_section {
+    background-image: url('../img/pp-1.jpg');
   }
-  .pp3 {
-  background: url('../img/pp-3.jpg');
-  background-size: cover;
+  .pp2_section {
+  background-image: url('../img/pp-2.jpg');
+  }
+  .pp3_section {
+  background-image: url('../img/pp-3.jpg');
   }
   .logo-name.pp {
     width: 455px;
@@ -1095,18 +1100,22 @@ footer {
     }
   }
 }
-                              //style for value
-.vl1 {
-background: url('../img/vp-2.jpg');
-background-size: cover;
+                              //style for val
+.vl_section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 580px;
 }
-.vl2 {
-background: url('../img/value2.jpg');
-background-size: cover;
+.vl1_section {
+  background-image: url('../img/vp-2.jpg');
 }
-.vl3 {
-background: url('../img/values/values_big.jpg');
-background-size: cover;
+.vl2_section {
+  background-image: url('../img/value2.jpg');
+}
+.vl3_section {
+  background-image: url('../img/values/values_big.jpg');
 }
 
 .val-wrap {
@@ -1327,18 +1336,22 @@ background-size: cover;
     margin-right: 20px;
     height: 237px;
 	}
-                                              // style for infra
-.infra1 {
-background: url('../img/infra1.jpg');
-background-size: cover;
+// style for infra
+.infra_section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 580px;
 }
-.infra2 {
-background: url('../img/infra/inf-bg.jpg');
-background-size: cover;
+.infra1_section {
+background-image: url('../img/infra1.jpg');
 }
-.infra3 {
-background: url('../img/infra3.jpg');
-background-size: 100% 100%;
+.infra2_section {
+background-image: url('../img/infra/inf-bg.jpg');
+}
+.infra3_section {
+background-image: url('../img/infra3.jpg');
 }
 .logo-name.vp.infra.blue {
   width: 530px;
@@ -1424,23 +1437,25 @@ background-size: 100% 100%;
 //   top: 27vh;
 // }
 
-                                    //style for houses
-
-.house1 {
-background: url('../img/house1.jpg');
-background-size: cover;
+//style for 
+.house_section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 580px;
 }
-.house2 {
-background: url('../img/house2.jpg');
-background-size: cover;
+.house1_section {
+  background-image: url('../img/house1.jpg');
 }
-.house3 {
-background: url('../img/house3.jpg');
-background-size: cover;
+.house2_section {
+  background-image: url('../img/house2.jpg');
 }
-.house4 {
-background: url('../img/house4.jpg');
-background-size: cover;
+.house3_section {
+  background-image: url('../img/house3.jpg');
+}
+.house4_section {
+  background-image: url('../img/house4.jpg');
 }
 .header.house4 .logo-name.vp ul li {
   padding-bottom: 0;
@@ -1529,7 +1544,8 @@ background-size: cover;
 width: 100%;
 height: 100vh;
 color: white;
-position: absolute;
+position: fixed;
+overflow: auto;
 z-index: 99999;
 top:0;
 left: -100%;

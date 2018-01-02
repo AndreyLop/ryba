@@ -311,12 +311,9 @@ overflow: hidden;
   padding: 8px;
   }
 footer {
-  position: absolute;
-  opacity: 0.6;
-  bottom: 0;
+  opacity: 0.8;
   height: auto;
   z-index: 2;
-  left:0;
 }
 
 
@@ -632,7 +629,7 @@ height: 535px;
 .vl3 {
 background: url('../img/mob/values-big.jpg') center no-repeat;
 // background-position: center;
-background-size: 100% 100%;
+background-size: cover;
 position: relative;
 height: 1240px;
 overflow: hidden;
@@ -670,9 +667,6 @@ overflow: hidden;
 .video-js {
   display: none!important;
 
-}
-body {
-  overflow: auto!important;
 }
   .header.place {
     background-image: url('../img/mob/place2.jpg');
@@ -1017,7 +1011,6 @@ position: relative;
 
   //  style for menu
 .my_menu {
-  height: auto;
 .my_menu_wrap {
   width: 300px;
   height: auto;
